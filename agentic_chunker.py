@@ -26,6 +26,7 @@ class AgenticChunker:
 
         self.llm = ChatOpenAI(model='gpt-4-1106-preview', openai_api_key=openai_api_key, temperature=0)
 
+    # Add multiple propositions at once
     def add_propositions(self, propositions):
         for proposition in propositions:
             self.add_proposition(proposition)
